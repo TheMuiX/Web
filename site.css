@@ -4,8 +4,25 @@ body
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
+    scroll-behavior: smooth;
+    overflow: hidden;
     margin: 0;
     padding: 0;
+    background-image: url(/files/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bodywrapper
+{
+    color: black;
+}
+.svg_bar {
+    mask-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    top: 650px
 }
 a
 {
@@ -14,10 +31,11 @@ a
 }
 .header
 {
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background:rgb(255, 60, 0);
+    background:rgba(41, 41, 41, 0.795);
     color:#fff;
     font-family: Apex;
     letter-spacing: 4px;
@@ -41,6 +59,7 @@ a
 }
 .headerlogo
 {
+    cursor: pointer;
     font-weight: bold;
 }
 .headerbutton
