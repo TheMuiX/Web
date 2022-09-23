@@ -1,3 +1,8 @@
+/*
+
+About.html
+
+*/
 body
 {
     user-select: none;
@@ -14,13 +19,26 @@ body
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.nobackground
+{
+    background: none;
+    background-color: #0C0B0B;
+}
+
+@font-face 
+{
+    font-family: ApexFont;
+    src: url(/files/ApexFont.otf);
+}
+
 .bodywrapper
 {
     height: 100%;
 	width: 100%;
 	position: absolute;
 }
-.svg_bar {
+.svg_bar 
+{
     mask-repeat: repeat-x;
     position: absolute;
     left: 0;
@@ -43,7 +61,7 @@ a
     padding: 10px;
     background:#0C0B0B;
     color:#fff;
-    font-family: Apex;
+    font-family: ApexFont;
     letter-spacing: 4px;
 }
 .header__section
@@ -73,14 +91,70 @@ a
 {
     cursor: pointer;
 }
-a.header__item.headerlogo.btnactive{
+a.header__item.btnactive
+{
     background-color:rgba(255, 255, 255, 0.185);
-
 }
-.footer{
+
+.footer
+{
     position: absolute;
     background-color: #0C0B0B;
     width: 100%;
     height:400px;
     top: 700px;
+}
+.footer_title {
+    position: relative;
+    color: White;
+    font-family: ApexFont;
+    font-size: 35px;
+    text-align: center;
+}
+.footer_content {
+    margin: 30px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+
+.title_text 
+{
+    position: relative;
+    color: #0C0B0B;
+    font-family: ApexFont;
+    font-size: 65px;
+    letter-spacing: 4px;
+    top: 30%;
+    left: 10%;
+    text-shadow: -2px -2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), -2px 2px 0 rgb(255, 255, 255), 2px 2px 0 rgb(255, 255, 255);
+}
+
+
+.description_text
+{
+    position: relative;
+    color: #0C0B0B;
+    font-family: ApexFont;
+    font-size: 35px;
+    letter-spacing: 4px;
+    top: 35%;
+    left: 10%;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+/*
+
+Links CSS
+
+*/
+.contacts_content{
+    position: relative;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    top: 15%;
 }
